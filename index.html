@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Portfolio Sandrine L.">
+  <meta http-equiv="X-UA-Compatible" content="IE=8" />
+  <link rel="stylesheet" title="mon_design" href="style.css">
+  <link rel="icon" type="image/png" href="images/favicon-32x32.png" sizes="32x32" />
+  <link rel="icon" type="image/png" href="images/favicon-16x16.png" sizes="16x16" />
+  <!--TYPO-->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Shadows+Into+Light&display=swap" rel="stylesheet">
+  <!--TYPO 2-->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,400;0,500;0,700;1,400;1,500;1,700&display=swap" rel="stylesheet">
+  <!----->
+  <link href="https://use.fontawesome.com/releases/v5.0.1/css/all.css" rel="stylesheet">
+  <title>Portfolio - Sandrine L. | A propos </title>
+
+</head>
+<body>
+
+
+  <header class="burger">
+    <input class="menu-btn" type="checkbox" id="menu-btn" />
+    <label class="menu-icon" for="menu-btn"><span class="navicon"></span></label>
+    <ul class="menu2">
+      <li><a href="index.html">A propos</a></li>
+      <li><a href="competences.html">Compétences</a></li>
+      <li><a href="projets.html">Projets</a></li>
+      <li><a href="profil.html">Profil</a></li>
+      <li><a href="contact.html">Contact</a></li>
+      <li><a href="sitemap.html">Plan du site</a></li>
+    </ul>
+  </header>
+
+  <img src="images/logoS2.png" id="cube" alt="Logo">
+
+
+  <nav id="main">
+    <ul class="menu">
+      <li class="logo">
+        <a href="index.html"><img src="images/logoS1.png" alt="Portfolio" id="Portfolio"></a></li>
+        <li><a href="index.html">A propos</a></li>
+        <li><a href="competences.html">Compétences</a></li>
+        <li><a href="projets.html">Projets</a></li>
+        <li><a href="profil.html">Profil</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+    <!--NAV ANIMATION-->
+    <script>
+      const nav = document.querySelector("#main");
+      const topOfNav = nav.offsetTop;
+
+      function fixNav() {
+        if (window.scrollY >= topOfNav) {
+          document.body.style.paddingTop = nav.offsetHeight + "px";
+          document.body.classList.add("fixed-nav");
+        } else {
+          document.body.style.paddingTop = 0;
+          document.body.classList.remove("fixed-nav");
+        }
+      }
+
+      window.addEventListener("scroll", fixNav);
+    </script>
+    <!--FIN ANIM-->
+    <!--ACCUEIL-->
+    <section class="container">
+
+      <div class="texteH1">
+        <h1>A PROPOS</h1>
+      </div>
+
+      <div class="départ">
+        <h2>Le commencement...</h2>
+        <div class="trait"></div>
+        <p class="com1">
+          Jeune developpeuse souhaitant s'orienter vers le métier de Développeur Front-end, c'est avec grand plaisir que je vous propose, à travers ce site, tout ce qui me représente; mes projets, mes créations ainsi que mon univers...
+        </p>
+      </div>
+
+      <div class="départ">
+        <h2>Mes passions...</h2>
+        <div class="trait"></div>
+        <p class="com1">
+          Je suis attirée depuis bien longtemps par des activités diverses tel que; l'informatique, la programmation, le graphisme, l'automobile...
+          Et quand j'ai découvert le métier de Développeur Front-end, ce fut le déclic.
+          <br>
+          Rassembler ma passion de l'informatique et ma passion pour la programmation fait que je m'épanouis dans ce métier.
+        </div>
+
+        <div class="départ">
+          <h2>Mon savoir-faire...</h2>
+          <div class="trait"></div>
+          <p class="com1">
+          La création graphique, le Développement de site internet (HTML - CSS - Wordpress) mais aussi l'environnement Windows font partis de mon bagage.</p>
+        </div>
+
+      </section>
+
+      <footer>
+
+       <a href="#top"><img id="haut"src="images/SH.png" alt="Retour Haut"></a>
+
+       <div class="logoFooter">
+        <a href="index.html"><img src="images/logoS1.png" alt="Mon Logo"></a>
+      </div>
+
+      <div class="footer_RS">
+        <h5>Retrouvez moi sur LinkedIn</h5>
+        <ul class="linkedin">
+          <li>
+            <a href="https://www.linkedin.com/in/sandrine-lacroix-428419213/" target="_blank">
+              <i class="fab fa-linkedin-in"></i>
+            </a>
+          </li>
+        </div>
+
+      </footer>
+      <div class="trait_dessus">
+        <hr class="noir">
+      </div>
+      <footer class="last">
+
+        <div class="container3">
+          <nav id="footer" class="menu">
+            <ul id="menu-footer">
+              <li><a href="sitemap.html">Plan du site</a></li>
+              <li><a href="mentions.html">Mentions Légales</a></li>
+              <li><a href="rgpd.html">Politique de Confidentialité</a></li>
+              <li><a href="contact.html">Contact</a></li>
+            </ul>
+          </nav>
+        </div>
+
+          </footer>
+          <div class="copy">
+            <h6>
+            © 2021 Copyright Sandrine LACROIX - Tous droits réservés.</h6>
+          </div>
+
+
+        </body>
+        </html>

@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Portfolio Sandrine L.">
+  <meta http-equiv="X-UA-Compatible" content="IE=8" />
+  <link rel="stylesheet" title="mon_design" href="style.css">
+  <link rel="icon" type="image/png" href="images/favicon-32x32.png" sizes="32x32" />
+  <link rel="icon" type="image/png" href="images/favicon-16x16.png" sizes="16x16" />
+  <!--TYPO-->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Shadows+Into+Light&display=swap" rel="stylesheet">
+  <!--TYPO 2-->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,400;0,500;0,700;1,400;1,500;1,700&display=swap" rel="stylesheet">
+  <!----->
+  <link href="https://use.fontawesome.com/releases/v5.0.1/css/all.css" rel="stylesheet">
+  <title>Portfolio - Sandrine L. | Profil </title>
+
+</head>
+<body>
+
+
+  <header class="burger">
+    <input class="menu-btn" type="checkbox" id="menu-btn" />
+    <label class="menu-icon" for="menu-btn"><span class="navicon"></span></label>
+    <ul class="menu2">
+      <li><a href="index.html">A propos</a></li>
+      <li><a href="competences.html">Compétences</a></li>
+      <li><a href="projets.html">Projets</a></li>
+      <li><a href="profil.html">Profil</a></li>
+      <li><a href="contact.html">Contact</a></li>
+      <li><a href="sitemap.html">Plan du site</a></li>
+    </ul>
+  </header>
+
+  <!-- <img src="images/logoS.png" id="loup" alt="Logo"> -->
+
+
+  <nav id="main">
+    <ul class="menu">
+      <li class="logo">
+        <a href="index.html"><img src="images/logoS1.png" alt="Portfolio" id="Portfolio"></a></li>
+        <li><a href="index.html">A propos</a></li>
+        <li><a href="competences.html">Compétences</a></li>
+        <li><a href="projets.html">Projets</a></li>
+        <li><a href="profil.html">Profil</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+    <!--NAV ANIMATION-->
+    <script>
+      const nav = document.querySelector("#main");
+      const topOfNav = nav.offsetTop;
+
+      function fixNav() {
+        if (window.scrollY >= topOfNav) {
+          document.body.style.paddingTop = nav.offsetHeight + "px";
+          document.body.classList.add("fixed-nav");
+        } else {
+          document.body.style.paddingTop = 0;
+          document.body.classList.remove("fixed-nav");
+        }
+      }
+
+      window.addEventListener("scroll", fixNav);
+    </script>
+    <!--FIN ANIM-->
+    <!--PAGE PRODIL-->
+
+    <body>
+      <header id="titre1">
+        <h1>CV de Sandrine LACROIX</h1>
+      </header>
+
+      <section class="cv1">
+        <div class="photo">
+          <img src="images/profil-photo.jpg" alt="Ma photo de profil">
+        </div>
+        <div class="prez">
+          <h2>A propos :</h2>
+          <p>Je suis Sandrine LACROIX, J'ai 24 ans, ma passion est la programmation web.</p>
+          <a href="#" download>Télécharger mon CV</a>
+        </div>
+        <div class="contact2">
+          <h2>Informations de contact</h2>
+          <div class="contact-flex">
+            <p>Nom : </p>
+            <p>LACROIX Sandrine</p>
+          </div>
+          <div class="contact-flex">
+            <p>Adresse : </p>
+            <p>55 rue de Strasbourg - 24000 Périgueux</p>
+          </div>
+          <div class="contact-flex">
+            <p>Téléphone :</p>
+            <p>06 69 61 79 33</p>
+          </div>
+          <div class="contact-flex">
+            <p>Mail : </p>
+            <p><a href="mailto:sandrine.lacroix24@gmail.com">sandrine.lacroix24@gmail.com</a></p>
+          </div>
+          <div class="contact-flex">
+            <p>Permis :</p>
+            <p>B</p>
+          </div>
+        </div>
+      </section>
+
+      <section class="cv1">
+        <h2>Expériences professionnelles</h2>
+        <div class="exp">
+          <div class="exp-logo">
+            <a href="#"><img src="images/odetec.png" alt="Logo de ODETEC"></a>
+          </div>
+          <div class="exp-info">
+            <h3>Stage - Web designer</h3>
+            <h4>ODETEC</h4>
+            <h4>Année 2021 - 1 mois</h4>
+          </div>
+          <div class="exp-desc">
+            <p>• Refonte du site internet de <a href="https://www.odetec.fr">odetec.fr</a> <br> • Créations graphiques, des animations et du SEO.</p>
+          </div>
+        </div>
+        <div class="exp">
+          <div class="exp-logo">
+            <a href="#"><img src="images/groupe-rebière.jpg" alt="Logo du groupe rebière"></a>
+          </div>
+          <div class="exp-info">
+            <h3>Préparatrice de Véhicule neufs et occasion</h3>
+            <h4>Groupe Rebière</h4>
+            <h4>Année 2019 - 2 mois</h4>
+          </div>
+          <div class="exp-desc">
+            <p>• Préparation des véhicules neufs pour la livraison
+              <br>
+            • Préparation des véhicules d’occasion pour le parc VO</p>
+          </div>
+        </div>
+        <div class="exp">
+          <div class="exp-logo">
+            <a href="#"><img src="images/begin.png" alt="Logo de Bégin"></a>
+          </div>
+          <div class="exp-info">
+            <h3>Stage - Web designer</h3>
+            <h4>Hôpital d'Instruction des Armées Bégin</h4>
+            <h4>Année 2018 - 3 mois</h4>
+          </div>
+          <div class="exp-desc">
+            <p>• Création d'un nouveau design pour le site internet de l'hôpital.
+              <br>
+              • Élaboration de plaquettes graphiques.
+              <br>
+            • Création d'une maquette du futur site web.</p>
+          </div>
+        </div>
+      </section>
+
+      <section class="cv1">
+        <h2>Formation</h2>
+        <div class="exp">
+          <div class="exp-logo">
+            <a href="#"><img src="images/wab.png" alt="Logo WAB"></a>
+          </div>
+          <div class="exp-info">
+            <h3>LA WAB | BERGERAC</h3>
+            <h4>Qualification Sésame Numérique 2020 - 2021 </h4>
+          </div>
+          <div class="exp-desc">
+            <p>Web Design, Création 2D, Marketing, Bureautique</p>
+          </div>
+        </div>
+        <div class="exp">
+          <div class="exp-logo">
+            <a href="#"><img src="images/ynov.jpg" alt="Logo YNOV"></a>
+          </div>
+          <div class="exp-info">
+            <h3>YNOV | BORDEAUX</h3>
+            <h4>Bachelor d’Infographie Multimédia 2014 - 2018</h4>
+          </div>
+          <div class="exp-desc">
+            <p>Web Design, Création 2D, Conception graphique, Communication visuelle</p>
+          </div>
+        </div>
+      </section>
+
+      <section class="cv1">
+        <h2>Compétences</h2>
+        <h3 class="h3gauche">Professionnelles</h3>
+        <div class="comp">
+          <p>HTML / CSS</p>
+          <div class="conteneur-barre"><span class="barre c100"></span></div>
+        </div>
+        <div class="comp">
+          <p>PHP / MySQL</p>
+          <div class="conteneur-barre"><span class="barre c95"></span></div>
+        </div>
+        <div class="comp">
+          <p>JAVASCRIPT</p>
+          <div class="conteneur-barre"><span class="barre c90"></span></div>
+        </div>
+
+        <h3 class="h3gauche">Personnelles</h3>
+        <div class="comp2">
+          <p>Créativité</p>
+          <p>70%</p>
+          <div class="conteneur-barre2"><span class="barre c70"></span></div>
+        </div>
+        <div class="comp2">
+          <p>Adaptation</p>
+          <p>80%</p>
+          <div class="conteneur-barre2"><span class="barre c80"></span></div>
+        </div>
+        <div class="comp2">
+          <p>Sérieux</p>
+          <p>100%</p>
+          <div class="conteneur-barre2"><span class="barre c100"></span></div>
+        </div>
+      </section>
+
+      <section class="cv1">
+        <h2>Centres d'intérêt</h2>
+        <figure class="interet">
+          <img src="images/auto.jpg" alt="Trail">
+          <figcaption>Automobiles</figcaption>
+        </figure>
+        <figure class="interet">
+          <img src="images/js.jpg" alt="Cuisine">
+          <figcaption>Programmation</figcaption>
+        </figure>
+        <figure class="interet">
+          <img src="images/voyage.jpg" alt="Gaming">
+          <figcaption>Voyages</figcaption>
+        </figure>
+        <figure class="interet">
+          <img src="images/renard.jpg" alt="Littérature">
+          <figcaption>Animaux</figcaption>
+        </figure>
+      </section>
+ <footer>
+
+       <a href="#top"><img id="haut"src="images/SH.png" alt="Retour Haut"></a>
+
+       <div class="logoFooter">
+        <a href="index.html"><img src="images/logoS1.png" alt="Mon Logo"></a>
+      </div>
+
+      <div class="footer_RS">
+        <h5>Retrouvez moi sur LinkedIn</h5>
+        <ul class="linkedin">
+          <li>
+            <a href="https://www.linkedin.com/in/sandrine-lacroix-428419213/" target="_blank">
+              <i class="fab fa-linkedin-in"></i>
+            </a>
+          </li>
+        </div>
+
+      </footer>
+      <div class="trait_dessus">
+        <hr class="noir">
+      </div>
+      <footer class="last">
+
+        <div class="container3">
+          <nav id="footer" class="menu">
+            <ul id="menu-footer">
+              <li><a href="sitemap.html">Plan du site</a></li>
+              <li><a href="mentions.html">Mentions Légales</a></li>
+              <li><a href="rgpd.html">Politique de Confidentialité</a></li>
+              <li><a href="contact.html">Contact</a></li>
+            </ul>
+          </nav>
+        </div>
+
+          </footer>
+                <div class="copy">
+                  <h6>
+                  © 2021 Copyright Sandrine LACROIX - Tous droits réservés.</h6>
+                </div>
+
+  </body>
